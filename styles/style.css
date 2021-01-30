@@ -125,7 +125,7 @@ header {
          
 } 
 
-} 
+
 .navcard h3{
     color: #fdb638;
 }
@@ -139,6 +139,15 @@ header {
     border: 2px solid #fdb638;
     margin-left: 10px;
     
+
+}
+
+.portpic {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-left: 300px;
+    margin-bottom: 455px;
 
 }
 
