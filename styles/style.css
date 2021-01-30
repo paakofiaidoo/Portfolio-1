@@ -99,20 +99,34 @@ header {
     height: 100%;
     width: 100%;
 }
+.navcard{
+    background-color: black;
+    display: flex;
+     justify-content: space-evenly;
+     
+    
 
-.card  {
+}
+
+.infocard  {
+   
     color: #ffffff;
-    padding-left:3% ;
-    padding-right:3% ;
+    padding-left:4% ;
+    padding-bottom: 16%;
+    padding-top: 15%;
     justify-content: space-evenly;
     padding: auto;
     align-items: left;
-    height: 100%;
-    width: auto;
-    display: block;
+    height: 200px;
+    width: 100%;
+    flex-direction: column;
+    background-color:black;
+    font-size: 14px;    
          
-}  
-.card h3{
+} 
+
+} 
+.navcard h3{
     color: #fdb638;
 }
 .contact{
@@ -123,7 +137,8 @@ header {
     width: auto;
     height: auto;
     border: 2px solid #fdb638;
-
+    margin-left: 10px;
+    
 
 }
 
