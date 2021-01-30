@@ -27,6 +27,10 @@
      height: 5rem;
      padding: auto;
      display: flex;
+     justify-content: ;
+     align-content: center;
+     padding-left:3% ;
+     padding-right:3% ;
  }
  .logo img{
      height: 2rem;
