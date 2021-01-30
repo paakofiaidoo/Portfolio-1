@@ -1,5 +1,6 @@
 *{
     box-sizing: content-box; 
+    transition: all 250ms ease-in-out;
     
     margin :0px
 
@@ -47,6 +48,7 @@
 .links li{
     padding: 1rem;
     text-transform: capitalize;
+    font-size: 1.5rem;
 
 
 }
@@ -54,4 +56,34 @@
 a{
     text-decoration: none;
     color: inherit;
+}
+
+
+
+
+.links li:hover , .links li:active{
+    color :#fdb638;
+    transform: scale(1.2);
+    
+
+}
+.links li:visited{
+
+    color: #bb8529;
+}
+
+ button {
+    color: white;
+    background-color: #fdb638;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right:2rem ;
+    border-radius:2rem ;
+    border: 0;
+    
+
+  
+    
+    
+
 }
