@@ -1,68 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <title>Portfolio</title>
-    <link rel="shortcut icon" href="./img/rel.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <!--<link
+      rel="logo"
+      sizes="180x180"
+      href="assets/images/logo_V1.png"
+    />
+    />  -->
+    <link rel="logo_V1.png" type="image/png" href="assets/images/logo_V1.png" />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Awortwe Felix Kwamena | Python Developer</title>
   </head>
+
   <body>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="#"> <img src="./img/rel.png" alt="REL logo" /> </a>
-      </div>
-      <div class="links">
-          
-          <li><a href="#"> Home</a></li>
-          <li><a href=""  >About Me</a></li>
-          <li><a href="" >Services</a></li>
-          <li><a href="" >Portfolio</a></li>  
-          <li><a href="" link="_blank">Blog</a></li>
-      </div>
-      <div class="action"> <button>HIRE ME</button></div>
-
+    <!-- Navbar -->
+    <nav>
+      <h1>Awortwe Felix Kwamena</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+        
+      </button>
     </nav>
 
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img
+        src="https://media-exp1.licdn.com/dms/image/C4D03AQELPVaWYZVk4Q/profile-displayphoto-shrink_800_800/0/1606950045787?e=1641427200&v=beta&t=wC7iAvYtVJ0IxlcrrxiapMJom-_XKwdvWXuO9qsKKkE"
+        alt="My Picture"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          My name is Felix Awortwe Kwamena , a Junior Python Developer ,
+          Currently a 4th Year Meteorology and Climate Science Student at
+          <a href="http://knust.edu.gh/" target="_blank"> KNUST. </a>
+          <p>
+            Currently an Intern at
+            <a href="https://www.datamavens.io/" target="_blank">
+              Datamavens Ltd. 
+            </a>
+             I am an aspiring  Climate Scientist, Cloud Engineer, Software
+            Developer and Inventor.  I Write
+            <a href="poems.html" class="poem-link"> poems</a> and novels and i am a
+            Full supporter of<a href="https://sdgs.un.org/goals" target="_blank">
+              UN Sdg's .
+            </a>
+            I have knowledge in : Python 3, HTML 5, CSS , Fortran 90 , Ncar Command
+            Language, CDO(Climate Data Operator ), Basic IT , Microsoft Word,Excel
+            and PowerPoint ,Canva and Adobe Xd. Learning from IBM nation
+            Africa,Enactus Knust, Andela, Pluralsight and Google Developers (Knust).
+            I am Available for Volunteer work, Remote work and Open source projects.
+          </p>
+        </p>
+      </div>
+    </section>
 
-
-
-    <header class="intro">
-        <nav class="navcard">
-          <div class="infocard">
-            <p> <h3>Hi, I am </h3></p>
-            <p> <h1 class="mycardname">Awortwe Felix Kwamena</h1></p>
-            <p><h4>A Web Developer</h4> </p>
-            <p> I am a Climate Scientist and an aspiring <br> Software Developer</p> 
-             <br>
-          
-            <div>
-              <button class="cv">
-               <a href="#"> Download Cv</a>
-             </button>
-             <button class="contact">
-               <a href="#">Contact Me</a>
-            </button>
-            </div>
-          </div>
-
-     <div> <img  class="portpic"src="./img/real.svg" alt="a picture"></div>
     
-    </nav>
-  <!--<div>
-          <button class="cv">
-           <a href="#"> Download Cv</a>
-          </button>
-          <button class="contact">
-            <a href="#">Contact Me</a>
-          </button>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/html.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/css.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/fortran.png"
+            alt="fortran 90 icon"
+            loading="lazy"
+            class="icon icon-card"
+          />
         </div>
-    
-  -->
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/Git-Icon-Black.png"
+            alt="Git icon"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/python-black.png"
+            alt="Python icon"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/canva.png"
+            alt="Canva icon"
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/Py-Reader.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">A Python PDF Reader</h3>
+          <p class="project-details">
+            A simple Desktop app built with python for reading books that are in
+            PDF format , it converts the text into audio and read out loud
+          </p>
+          <a
+            href="https://github.com/felaris/PDF-Reader"
+            target="_blank"
+            class="project-link"
+            >Check it Out</a
+          >
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/screenshot-with-python.png"
+            alt="screenshot"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Screenshot Desktop App</h3>
+          <p class="project-details">
+            This is a Desktop app , that is used for taking screenshot on windows.
+            This Desktop app was built with Python and can be used easily on windows
+
+            
+          </p>
+          <a
+            href="https://github.com/felaris/Screenshot-with-Python"
+            target="_blank"
+            class="project-link"
+            >Check it Out</a>
+
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/portifolio-website.png"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Portfolio Website </h3>
+          <p class="project-details">
+            This is my portfolio website , built with Html, CSS and Javascript 
+            The codes are available on my github for free download and Edit
+
+            
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
 
 
-<div class=></div>
-<div></div>
 
-    </header>
-    <main></main>
+ <!--
+<section class="certificate">-->
+
+
+<!-- Certificate Slideshow container -->
+<br>
+<h2 class="bio-title" style="text-align: center;">
+  Certificates
+</h2>
+<section>
+<div class="slideshow-container">
+  
+
+
+
+  <!-- Full-width images with number and caption text -->
+  <div class="slide">
+    <div class="numbertext">1 / 14</div>
+    <img src="assets/images/aws-hub.png" style="width:100%">
+    <div class="text"><b>AWS Cloud Computing Certificate</b></div>
+  </div>
+
+  <div class="slide">
+    <div class="numbertext">2 / 14</div>
+    <img src="assets/images/basic-hub.png" style="width:100%">
+    <div class="text"><b>Basic IT Certificate</b></div>
+  </div>
+
+  <div class="slide">
+    <div class="numbertext">3 / 14</div>
+    <img src="assets/images/cloud-hub.png" style="width:100%">
+    <div class="text"><b>Cloud Computing Certificate</b></div>
+  </div>
+
+  <div class="slide">
+    <div class="numbertext">4 / 14</div>
+    <img src="assets/images/css-hub.png" style="width:100%">
+    <div class="text"><b>CSS Certificate</b></div>
+  </div>
+  <div class="slide">
+    <div class="numbertext">5 / 14</div>
+    <img src="assets/images/data-hub.png" style="width:100%">
+    <div class="text"><b>Data Science Certificate</b></div>
+  </div>
+  <div class="slide">
+    <div class="numbertext">6 / 14</div>
+    <img src="assets/images/docker-hub.png" style="width:100%">
+    <div class="text"><b>Docker Certificate</b></div>
+  </div>
+  <div class="slide">
+    <div class="numbertext">7 / 14</div>
+    <img src="assets/images/fund-hub.png" style="width:100%">
+    <div class="text"><b>IT Fundamentals Certificate</b></div>
+  </div>
+  <div class="slide">
+    <div class="numbertext">8 / 14</div>
+    <img src="assets/images/hack-hub.png" style="width:100%">
+    <div class="text"><b>Ethical Hacking Certificate</b></div>
+  </div>
+  <div class="slide">
+    <div class="numbertext">9 / 14</div>
+    <img src="assets/images/html-hub.png" style="width:100%">
+    <div class="text"><b>HTML Certificate</b></div>
+  </div>
+  <div class="slide">
+    <div class="numbertext">10 / 14</div>
+    <img src="assets/images/javascript.png" style="width:100%">
+    <div class="text"><b>JavaScript Certificate</b></div>
+  </div>
+  <div class="slide">
+    <div class="numbertext">11 / 14</div>
+    <img src="assets/images/youtex.jpg" style="width:100%">
+    <div class="text"><b>Youtex Certificate </b></div>
+  </div>
+  <div class="slide">
+    <div class="numbertext">12 / 14</div>
+    <img src="assets/images/html-solo.jpg" style="width:100%">
+    <div class="text"><b>HTML Certificate from Sololearn</b></div>
+  </div>
+  <div class="slide">
+    <div class="numbertext">13 / 14</div>
+    <img src="assets/images/jira.png" style="width:100%">
+    <div class="text"><b>Jira Essentials Certificate</b></div>
+  </div>
+
+  <div class="slide">
+    <div class="numbertext">14 / 14</div>
+    <img src="assets/images/py-solo.jpg" style="width:100%">
+    <div class="text"><b>Python Certificate From Sololearn</b></div>
+  </div>
+</div>
+  </div>
+
+
+
+
+
+
+
+<!-- The circles/dots -->
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+</div> 
+
+
+</section>
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/mzbylrvl" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+
+<!-- Social accounts - Fixed to the right -->
+
+    <div class="socials">
+      <a href="https://twitter.com/KwamenaFelix" target="_blank"
+        ><img
+          src="assets/icons/icons8-twitter-circled.gif"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.instagram.com/felixawortwekwamena/" target="_blank"
+        ><img
+          src="assets/icons/icons8-instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/felix-awortwe-kwamena-%F0%9F%87%AC%F0%9F%87%AD-4644a7140/"
+        target="_blank"
+        ><img
+          src="assets/icons/icons8-linkedin-circled.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/felaris" target="_blank"
+        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+      /></a>
+    </div>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/icons8-upward-arrow.gif"
+        class="socicon up-arrow"
+        alt=""
+    /></i>
+
+
+
+<!-- Footer section -->
+    <footer>
+
+      <div>
+        <a href="https://www.instagram.com/felixawortwekwamena/" target="_blank"
+        ><img
+          src="assets/icons/icons8-instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      
+      </div>
+      <p class="copy">
+        Built by
+        <a href="https://twitter.com/KwamenaFelix" target="_blank"
+          >Felaris Angels</a
+        >
+      </p>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
