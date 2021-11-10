@@ -593,4 +593,34 @@ footer {
   }
 }
 
-/* Poems CSS*/
+.bio-title{
+  text-align: center;
+}
+.bio p{
+  margin: 0.5rem;
+      padding: 0;
+      line-height: 1rem;
+}
+.skills-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 100%;
+  flex-wrap: wrap;
+
+
+}
+.skills-wrapper img{
+  max-width: 8rem;
+  max-height: 8rem;
+}
+.shadow{
+  background: #fff;
+box-shadow:  7px 7px 14px #d4d4d4,
+-7px -7px 14px #ffffff!important;
+  /* box-shadow: 0px 0px 3px #00000050; */
+}
+section{
+  padding:10%;
+}
