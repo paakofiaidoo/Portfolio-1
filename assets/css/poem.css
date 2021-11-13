@@ -35,7 +35,8 @@ nav:hover {
 .poem {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: max-content !important;
+  min-height: 100vh;
   width: 100vw;
   overflow: auto;
   text-align: center;
@@ -56,7 +57,6 @@ nav:hover {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    height: 100%;
     overflow: hidden;
   }
   .poem .title {
@@ -71,7 +71,7 @@ nav:hover {
     text-shadow: 0 0 10px #fff;
   }
   .poem .text {
-    margin-top: 7rem;
+    margin-top: 5rem;
     height: 100%;
     width: auto !important;
     z-index: 3;
@@ -132,10 +132,6 @@ p span {
   }
 }
 
-.praise {
-  min-height: 140vh;
-  height: 100%;
-}
 .praise .title {
   width: 50%;
   color: #000;
@@ -148,16 +144,12 @@ p span {
   padding: 1rem 1rem;
 }
 @media only screen and (max-width: 800px) {
-  .praise {
-    min-height: 160vh;
-  }
   .praise .title {
     color: #183052;
     background-position: center;
     text-shadow: 0 0 10px #fff;
   }
   .praise .text {
-    margin-top: 5rem;
     text-shadow: 0 0 30px #000;
     background-color: #183052dd;
     color: #fff;
@@ -165,9 +157,6 @@ p span {
   }
 }
 
-.cry {
-  min-height: 120vh;
-}
 .cry .title {
   width: 60%;
   color: #fff;
@@ -179,14 +168,10 @@ p span {
   width: 40%;
 }
 @media only screen and (max-width: 800px) {
-  .cry {
-    min-height: 140vh;
-  }
   .cry .title {
     color: #0d0d0d;
   }
   .cry .text {
-    margin-top: 3rem;
     background-color: #5a4645dd;
     color: #000;
     width: 60%;
@@ -194,7 +179,6 @@ p span {
 }
 
 .old {
-  height: 110vh;
   /* Extra small devices (phones, 600px and down) */
   /* Small devices (portrait tablets and large phones, 600px and up) */
   /* Medium devices (landscape tablets, 768px and up) */
@@ -211,15 +195,12 @@ p span {
   width: 60%;
 }
 @media only screen and (max-width: 800px) {
-  .old {
-    min-height: 130vh;
-  }
   .old .title {
     color: #fff;
     text-shadow: 0 0 30px #000;
   }
   .old .text {
-    margin-top: 3rem;
+    margin-top: 5rem;
     background-color: #262626e0;
     color: #fff;
     width: 60%;
