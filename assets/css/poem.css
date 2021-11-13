@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  background: #f5f5f5;
+  width: 100vw;
+  height: 100%;
+  /* //overflow: hidden; */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: transparent;
+  box-shadow: none;
+  opacity: 0.3;
+}
+nav * {
+  color: #fff !important;
+}
+nav:hover {
+  opacity: 1;
+}
+
+.poem {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  text-align: center;
+}
+.poem .title {
+  display: flex;
+  flex-direction: row;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+@media only screen and (max-width: 800px) {
+  .poem {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    overflow: hidden;
+  }
+  .poem .title {
+    position: absolute;
+    width: 100vw !important;
+    height: 100% !important;
+    z-index: 2;
+    background-position: center;
+    background-size: cover !important;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px #fff;
+  }
+  .poem .text {
+    margin-top: 7rem;
+    height: 100%;
+    width: auto !important;
+    z-index: 3;
+    padding: 0px 3rem;
+  }
+}
+
+p {
+  text-overflow: clip;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+p span {
+  margin: 0.4rem;
+  line-height: 1rem;
+}
+
+.bound .text,
+.cry .text {
+  background-position: left;
+}
+
+.praise,
+.old {
+  flex-direction: row-reverse;
+}
+.praise .text,
+.old .text {
+  background-position: right;
+}
+
+.bound .title {
+  width: 40%;
+  color: #0d0d0d;
+  background-size: contain;
+}
+.bound .text {
+  background-color: #a2d4f2;
+  background-position: left;
+  color: #000;
+  width: 60%;
+}
+@media only screen and (max-width: 800px) {
+  .bound {
+    height: 100%;
+  }
+  .bound .title {
+    color: #012841;
+  }
+  .bound .text {
+    text-shadow: 0 0 30px #fff;
+    background-color: #a2d4f250;
+    color: #000;
+    width: 60%;
+  }
+}
+
+.praise {
+  min-height: 140vh;
+  height: 100%;
+}
+.praise .title {
+  width: 50%;
+  color: #000;
+  background-position: right;
+}
+.praise .text {
+  background-color: #183052;
+  color: #98c2ed;
+  width: 50%;
+  padding: 1rem 1rem;
+}
+@media only screen and (max-width: 800px) {
+  .praise {
+    min-height: 160vh;
+  }
+  .praise .title {
+    color: #183052;
+    background-position: center;
+    text-shadow: 0 0 10px #fff;
+  }
+  .praise .text {
+    margin-top: 5rem;
+    text-shadow: 0 0 30px #000;
+    background-color: #183052dd;
+    color: #fff;
+    width: 60%;
+  }
+}
+
+.cry {
+  min-height: 120vh;
+}
+.cry .title {
+  width: 60%;
+  color: #fff;
+}
+.cry .text {
+  background-color: #5a4645;
+  background-position: left;
+  color: #dfe0ea;
+  width: 40%;
+}
+@media only screen and (max-width: 800px) {
+  .cry {
+    min-height: 140vh;
+  }
+  .cry .title {
+    color: #0d0d0d;
+  }
+  .cry .text {
+    margin-top: 3rem;
+    background-color: #5a4645dd;
+    color: #000;
+    width: 60%;
+  }
+}
+
+.old {
+  height: 110vh;
+  /* Extra small devices (phones, 600px and down) */
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Large devices (laptops/desktops, 992px and up) */
+}
+.old .title {
+  width: 40%;
+  color: #fff;
+  background-position: right;
+}
+.old .text {
+  background-color: #262626;
+  color: #f2f2f2;
+  width: 60%;
+}
+@media only screen and (max-width: 800px) {
+  .old {
+    min-height: 130vh;
+  }
+  .old .title {
+    color: #fff;
+    text-shadow: 0 0 30px #000;
+  }
+  .old .text {
+    margin-top: 3rem;
+    background-color: #262626e0;
+    color: #fff;
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .old .title {
+    background-size: contain;
+  }
+}
+
+/*# sourceMappingURL=poem.css.map */
