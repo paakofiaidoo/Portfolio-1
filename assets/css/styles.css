@@ -7,7 +7,7 @@
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: #fff;
-  --primary-color:#000;
+  --primary-color: #000;
   --secondary-color: #ff7235;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
@@ -16,23 +16,24 @@
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
+
 /* Variables end */
 
 html {
   scroll-behavior: smooth;
 }
 
-
-
 /* for slide*/
 
 
 
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
-  
+
   max-width: 900px;
   max-height: 900px;
   position: relative;
@@ -45,14 +46,14 @@ html {
 }
 
 /* Certificate img*/
-.slide img{
-  width:80%;
-  height:80%;
-  display:block;
+.slide img {
+  width: 80%;
+  height: 80%;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  
-  
+
+
   justify-content: center;
 }
 
@@ -62,10 +63,10 @@ html {
   text-align: center;
   justify-content: center;
   margin-top: 2.5rem;
-  display:block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  
+
 }
 
 .slide-header {
@@ -81,7 +82,8 @@ html {
 
 
 /* forward & Back buttons */
-.Back, .forward {
+.Back,
+.forward {
   cursor: pointer;
   position: absolute;
   top: 48%;
@@ -93,7 +95,7 @@ html {
   font-size: 19px;
   transition: 0.4s ease;
   border-radius: 0 5px 5px 0;
-  user-select: none;
+  /* user-select: none; */
 }
 
 /* Place the "forward button" to the right */
@@ -103,8 +105,9 @@ html {
 }
 
 /*when the user hovers,add a black background with some little opacity */
-.Back:hover, .forward:hover {
-  background-color: rgba(0,0,0,0.8);
+.Back:hover,
+.forward:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption Info */
@@ -139,7 +142,8 @@ html {
   transition: background-color 0.5s ease;
 }
 
-.enable, .dots:hover {
+.enable,
+.dots:hover {
   background-color: #717161;
 }
 
@@ -152,13 +156,23 @@ html {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .5}
-  to {opacity: 2}
+  from {
+    opacity: .5
+  }
+
+  to {
+    opacity: 2
+  }
 }
 
 @keyframes fade {
-  from {opacity: .5}
-  to {opacity: 2}
+  from {
+    opacity: .5
+  }
+
+  to {
+    opacity: 2
+  }
 }
 
 
@@ -192,7 +206,7 @@ a:hover {
 
 body {
   font-family: var(--font-family);
-  
+
 }
 
 section {
@@ -214,6 +228,7 @@ nav {
   padding: 1.5rem 3.5rem;
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  width: 100vw;
 }
 
 nav h1 {
@@ -224,6 +239,7 @@ nav a {
   color: var(--primary-color);
   transition: var(--transition);
 }
+
 nav a:hover {
   color: var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
@@ -246,6 +262,7 @@ nav ul li {
   cursor: pointer;
   display: none;
 }
+
 /* Navbar ends */
 
 /* Hero section */
@@ -276,7 +293,7 @@ nav ul li {
 .bio {
   width: 30rem;
   padding: 0.925rem;
-  
+
   border-radius: 7px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
   /*background-color: #fff;*/
@@ -290,6 +307,7 @@ nav ul li {
   line-height: var(--line-height);
   padding: 0.7rem 0;
 }
+
 /* Hero section ends */
 
 /* More about */
@@ -305,8 +323,9 @@ nav ul li {
 
 .more-about p {
   line-height: var(--line-height);
-  padding: 0.4rem; 
+  padding: 0.4rem;
 }
+
 /* More about ends */
 
 /* Skills section */
@@ -329,6 +348,7 @@ nav ul li {
   width: 11.875rem;
   height: 11.25rem;
 }
+
 /* Skills section ends */
 
 /* Projects section */
@@ -438,6 +458,7 @@ nav ul li {
   border: 2px solid var(--primary-color);
   cursor: pointer;
 }
+
 /* Contacts section ends */
 
 /* Social buttons */
@@ -453,6 +474,7 @@ nav ul li {
   width: 2.0rem;
   height: 2.0rem;
 }
+
 /* Social button ends */
 
 /* Scroll to top button */
@@ -467,6 +489,7 @@ nav ul li {
   width: 3rem;
   height: 3rem;
 }
+
 /* Scroll to top button ends */
 
 /* Footer section */
@@ -476,6 +499,7 @@ footer {
   text-align: center;
   margin: 2rem 0 0;
 }
+
 /* Footer section ends */
 
 /* General (utilities) */
@@ -500,6 +524,7 @@ footer {
   nav {
     padding: 1.5rem 1rem;
   }
+
   nav ul {
     position: fixed;
     background-color: var(--bg-color);
@@ -525,14 +550,14 @@ footer {
   }
 
 
-  
+
   .hero {
     margin-top: -7rem;
     flex-direction: column;
     gap: 0;
   }
 
-  
+
   .hero img {
     height: 37.5rem;
     width: 40.5rem;
@@ -593,15 +618,17 @@ footer {
   }
 }
 
-.bio-title{
+.bio-title {
   text-align: center;
 }
-.bio p{
+
+.bio p {
   margin: 0.5rem;
-      padding: 0;
-      line-height: 1rem;
+  padding: 0;
+  line-height: 1rem;
 }
-.skills-wrapper{
+
+.skills-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -611,16 +638,53 @@ footer {
 
 
 }
-.skills-wrapper img{
+
+.skills-wrapper img {
   max-width: 8rem;
   max-height: 8rem;
 }
-.shadow{
+
+.shadow {
   background: #fff;
-box-shadow:  7px 7px 14px #d4d4d4,
--7px -7px 14px #ffffff!important;
+  box-shadow: 7px 7px 14px #d4d4d4,
+    -7px -7px 14px #ffffff !important;
   /* box-shadow: 0px 0px 3px #00000050; */
 }
-section{
-  padding:10%;
+
+.hero {
+  padding: 2rem;
+  width: 100%;
+  max-width: max-content;
+  max-height: max-content;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background-color: #71716120;
+}
+
+.hero img {
+  width: auto;
+  border-radius: 1rem;
+}
+
+.bio {
+  padding: 0px;
+}
+
+@media screen and (max-width: 780px) {
+  .hero {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .hero img {
+    width: auto;
+    border-radius: 1rem;
+    margin: auto;
+  }
+
+  .hero .bio {
+    width: 100%;
+    margin: auto;
+  }
 }
