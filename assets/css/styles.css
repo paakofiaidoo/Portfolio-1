@@ -559,7 +559,7 @@ footer {
 
 
   .hero img {
-    height: 37.5rem;
+    /* height: 37.5rem; */
     width: 40.5rem;
   }
 
@@ -678,8 +678,9 @@ footer {
   }
 
   .hero img {
-    width: auto;
+    width: 100%;
     border-radius: 1rem;
+    height: auto;
     margin: auto;
   }
 
