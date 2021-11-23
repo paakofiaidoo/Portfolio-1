@@ -77,6 +77,11 @@ nav:hover {
     padding: 0px 3rem;
   }
 }
+@media only screen and (max-width: 500px) {
+  .poem .title {
+    font-size: 1rem;
+  }
+}
 
 p {
   text-overflow: clip;
@@ -200,15 +205,4 @@ p span {
   }
 }
 
-.scroll-up-poem {
-  position: fixed;
-  right: 0.5%;
-  bottom: 3%;
-  cursor: pointer;
-}
-
-.up-arrow {
-  width: 3rem;
-  height: 3rem;
-}
 /*# sourceMappingURL=poem.css.map */
